@@ -38,6 +38,7 @@ struct socket_options_base {
   void acceptor_options(boost::asio::ip::tcp::acceptor &acceptor) {
     acceptor.set_option(acceptor_reuse_address);
     acceptor.set_option(acceptor_report_aborted);
+    acceptor.set_option(linger);
   }
 
   void socket_options(boost::asio::ip::tcp::socket &socket) {
