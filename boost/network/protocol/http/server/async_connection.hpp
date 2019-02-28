@@ -56,7 +56,7 @@
  * We define the buffer size for each connection that we will use on the server
  * side.
  */
-#define BOOST_NETWORK_HTTP_SERVER_CONNECTION_BUFFER_SIZE 4096uL
+#define BOOST_NETWORK_HTTP_SERVER_CONNECTION_BUFFER_SIZE 16384uL
 #endif
 
 namespace boost {
